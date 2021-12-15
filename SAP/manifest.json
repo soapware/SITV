@@ -1,0 +1,52 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 2,
+    "name": "In-Tab Values - SOAP VERSION",
+    "version": "6.9",
+    "description": "FUck this stupid extention. I aint payin for shit.",
+    "short_name": "SOAP",
+    "permissions": ["unlimitedStorage", "tabs", "storage", "*://*.roblox.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.roblox.com/*"],
+            "run_at": "document_start",
+            "css": ["background.css"],
+            "js": ["chart.js", "jquery-3.5.1.min.js", "content_script_utilities.js"]
+        }
+
+    ],
+
+    "background":
+    {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+
+    "browser_action":
+    {
+        "default_icon": "icons/primary.png",
+        "default_popup": "popup/popup.html"
+    },
+    "icons":
+    {
+        "48": "icons/primary-with-arrow.png",
+        "96": "icons/primary-with-arrow.png"
+    },
+    "web_accessible_resources": [
+        "server-purchase-popup.html",
+        "audio/*.mp3",
+        "icons/*.svg",
+        "icons/*.png",
+        "startpage.html",
+        "startup.js",
+        "automationwidget.html",
+        "thanks-for-purchase-popup.html",
+        "options.html",
+        "options.js",
+        "cancel-subscription-popup.html",
+        "data.json",
+        "sideValueBox.html"
+    ]
+
+}
