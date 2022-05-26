@@ -1,0 +1,50 @@
+{
+    "Data Display":
+    {
+        "Trade Values": [1, true, true, "Enables item values to be seen in the trades window."],
+        "Value Provider": [2, "rolimons.com", true, "Determines which value supplier will be used universally by the extension."],
+        "Trade List Values": [1, true, true, "Previews trade values on the trade list using ITV's caching system. This feature currently only works on inbound trades. If the values appear to be inaccurate( often after declining trades using the Automation Widget ), please wait a little while and then refresh the trades list."],
+        "Over-RAP data": [1, true, false, "Displays how much an item is over it's RAP( Recent Average Price ) requirement. This feature tells you have likely it is that an item will soon raise in value. Currently this feature only works with the rolimons.com value supplier."],
+        "Under-RAP data": [1, true, false, "Displays how much an item is under it's RAP( Recent Average Price ) requirement. This feature tells you have likely it is that an item will soon lower in value. Currently this feature only works with the rolimons.com value supplier."],
+        "Till raise data": [1, true, false, "Displays how much more RAP an item needs to being considered for a value raise by the Rolimons value team. https://www.rolimons.com/raprequirements"],
+        "User Profile Value": [1, true, true, "Shows users' total Recent Average Price on their profile page."],
+        "User Profile RAP": [1, true, true, "Shows users' total value on their profile page."],
+        "Total Win/Loss": [1, true, true, "Shows the current trade's total win amount to the right of the trade decline button."],
+        "Current Value Provider Display":[1, true, true, "Displays the current value provider you have active directly above the trades list on the trades page."],
+        "Send Trade Button": [1, true, true, "Adds an option to send a trade to the active user beisdes the normal Counter trade option."],
+        "Send Trade Button - Open in new tab": [1, true, false, "Determines whether the Send Trade Button will open the new trade in a new tab."],
+        "Flagging":
+        {
+            "Flag Projecteds": [1, true, false, "Flags projected items with a warning symbol. Projected items are items that have been purchased at a price much higher than their value, in order to artificially inflate their RAP( Recent Average Price )."],
+            "Flag Rares": [1, true, false, "Flags rare items with a diamond symbol. Rare items are items that have very few copies available."],
+            "Flag Proof Based": [1, true, false, "Flags proof based items with a shield symbol. Proof based items are items that are valued independently from their RAP( Recent Average Price)."],
+            "Flag Over-RAP": [1, true, false, "Flags Over-RAP items with a up arrow symbol. Over-RAP items are items that are over their RAP( Recent Average Price ) requirement, and may raise in value soon."],
+            "Flag Under-RAP": [1, true, false, "Flags Under-RAP items with a up arrow symbol. Under-RAP items are items that are under their RAP( Recent Average Price ) requirement, and may lower in value soon."]
+        },
+        "Quick Links":
+        {
+            "rolimons.com General Item Link": [1, true, false, "Adds a button that links to each item's general page on rolimons.com."],
+            "rolimons.com UAID specific Item Link": [1, true, false, "Adds a button that links to each item's specific page on rolimons.com."],
+            "rolimons.com User Link": [1, true, false, "Adds a button that links to the sender of each trade's user page on rolimons.com."],
+            "rblx.trade General Item Link": [1, false, false, "Adds a button that links to each item's general page on rblx.trade."],
+            "rblx.trade UAID Specific Item Link": [1, false, false, "Adds a button that links to each item's specific page on rblx.trade."],
+            "rblx.trade User Link": [1, false, false, "Adds a button that links to the sender of each trade's user page on rblx.trade."]
+        }
+    },
+    "Tools":
+    {
+        "Automation Widget": [1, true, true, "A tool that allows for the automation of tasks such as declining bad inbound trades, and removing followers. &#13;&#10;&#13;&#10;Inbound Declining:&#13;&#10;Decline Value Losses: Determines if losses will be declined based on the amount of value gained / lossed.&#13;&#10;&#13;&#10;Decline Threshold: Determines how much you need to be losing for a trade to be declined. For instance, if this is set to .15, all trades where you are losing 15% of the trade's value will be declined. If you don't understand what this means, it is suggested to leave this value at .15. *This parameter doesn't matter if you don't enable Decline Value Losses*&#13;&#10;&#13;&#10;Decline Projects: If enabled the extension will decline all trades that include projecteds on the recieving side.&#13;&#10;&#13;&#10;Max Decline Amount: Determines the max amount of the extension is allowed to decline before stopping.&#13;&#10;&#13;Whitelisted Users: The extension will skip over declining trades by these users. Example input: 1429560605, HappyRobloxian20000, KDJ"]
+    },
+    "Other":
+    {
+        "Trade Detail Censoring":
+        {
+            "Hide Serials": [1, false, false],
+            "Hide Usernames": [1, false, false],
+            "Hide Dates": [1, false, false]
+        },
+        "Activation noise": [1, false, false],
+        "Item RAP Chart": [1, true, false, "Displays an item's recent RAP( Recent Average Price ) graph when you click the graph icon in the bottom right of an item."],
+        "Refresh on Important Option Update": [1, true, false, "Refreshes the page automatically when important options are changed from the popup options page."]
+    }
+}
