@@ -37,20 +37,7 @@ async function GetUserId() {
 
 function CheckGamepassOwnership(userId) {
     return new Promise(async function (resolve, reject) {
-        let URL = `https://inventory.roblox.com/v1/users/${userId}/items/GamePass/47280364`;
-
-        var Request = new XMLHttpRequest()
-        Request.open("GET", URL, true);
-        Request.onreadystatechange = function () {
-            if (Request.readyState == 4) {
-                if (JSON.parse(Request.responseText).data[0] !== undefined) {
-                    resolve(true);
-                }
-
-                resolve(false);
-            }
-        }
-        await Request.send()
+        resolve (true)
     });
 }
 
